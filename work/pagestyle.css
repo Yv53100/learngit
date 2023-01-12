@@ -42,6 +42,12 @@ table {
   border-spacing: 0;
 }
 
+.avatar{
+    width: 82px;
+    height: 82px;
+    border-radius: 40px;
+}
+
 .topbox{
     width: 100%;
     height: 62px;
@@ -69,6 +75,7 @@ table {
     float: right;
     margin-top: 19px;
     margin-right: 5px;
+    position: relative;
 }
 .set .tip{
     background-image: url(./imgs/set_tips.png);;
@@ -77,4 +84,94 @@ table {
     position: absolute;
     top: -13px;
     left: -65px;
+    line-height: 26px;
+    text-indent: 0.4em;
+    color: #0082fe;
+    font-size: 12px;
+}
+.content{
+    width: 1030px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+.userborder{
+    background-color: #dbdadb;
+    margin-bottom: 10px;
+    width: 230px;
+    height: 216px;
+    opacity:0.8;
+}
+.user{
+    padding: 5px 0 15px 0;
+}
+.userpic{
+    width: 82px;
+    height: 82px;
+    margin: auto;
+    border-radius: 40px;
+}
+.username{
+    text-align: center;
+    color: #3E3E3E;
+    font-size: 14px;
+    margin-top: 20px;
+}
+.address-select{
+    position: relative;
+    width: 130px;
+    margin: 10px auto 0 auto;
+}
+.address-select label{
+    display: block;
+    background-image: url(./imgs/address_select_bg.png);
+    width: 130px;
+    height: 30px;
+    margin: auto;
+    line-height: 29px;
+    text-indent: 1.5em;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+}
+#user-status{
+    margin-left: 30px;
+}
+.arrow-down{
+    width: 9px;
+    height: 7px;
+    background-image: url(./imgs/arrow-down.png);
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+#status{
+    width: 130px;
+    height: 30px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+}
+.user-handle{
+    font-size: 12px;
+    text-align: center;
+    color: #3E3E3E;
+    margin-top: 10px;
+}
+.user-handle a{
+    display: inline-block;
+    padding: 0 5px;
+    color: #3E3E3E;
+}
+.footerbox{
+    width: 100%;
+    background-color: #0082fe;
+    height: 40px;
+}
+.footer{
+    color: #ffffff;
+    width: 1030px;
+    margin: auto;
+    font-size: 12px;
+    line-height: 40px;
 }
