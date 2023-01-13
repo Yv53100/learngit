@@ -47,7 +47,9 @@ table {
     height: 82px;
     border-radius: 40px;
 }
-
+body{
+    background-color: #ededed;
+}
 .topbox{
     width: 100%;
     height: 62px;
@@ -89,17 +91,30 @@ table {
     color: #0082fe;
     font-size: 12px;
 }
+.banner{
+    width: 1030px;
+    margin: auto;
+    position: relative;
+    z-index: -99;
+}
+.banner img{
+    display: block;
+}
 .content{
     width: 1030px;
     margin: auto;
     margin-bottom: 50px;
 }
+.left{
+    float: left;
+    width: 230px;
+    margin-top: -105px;
+}
 .userborder{
-    background-color: #dbdadb;
+    background-image: url(./imgs/border_bg.png);
     margin-bottom: 10px;
     width: 230px;
     height: 216px;
-    opacity:0.8;
 }
 .user{
     padding: 5px 0 15px 0;
@@ -162,6 +177,107 @@ table {
     display: inline-block;
     padding: 0 5px;
     color: #3E3E3E;
+}
+.border{
+    border-left: 1px solid #dbdadb;
+    border-right: 1px solid #dbdadb;
+    border-bottom: 1px solid #dbdadb;
+    background-color: #ffffff;
+    margin-bottom: 10px;
+}
+.login{
+    border-bottom: 1px solid #b8b6b7;
+    padding: 5px 0 15px 0;
+}
+.login .title{
+    margin-left: 10px;
+    padding-bottom: 0px;
+    position: relative;
+    height: 53px;
+}
+#loginset{
+    display: block;
+    width: 17px;
+    height: 17px;
+    background: url(./imgs/set_ico.png);
+    position: absolute;
+    right: 30px;
+    top: 11px;
+    margin-right: -6px;
+    cursor: pointer;
+}
+.login-link{
+    /* overflow: hidden; */
+    margin: 0 8px 0 8px;
+    min-height: 335px;
+}
+.item{
+    padding: 5px;
+    cursor: pointer;
+    background-color: #fff;
+    float: left;
+    margin-top: 10px;
+    width: 60px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+.item img{
+    width: 44px;
+    height: 44px;
+    display: block;
+    margin: auto;
+}
+.item p{
+    width: 100%;
+    font-size: 12px;
+    color: #747474;
+    display: inline-block;
+    text-align: center;
+}
+.Pageselect{
+    text-align: center;
+    margin-top: 10px;
+}
+.school-inform{
+    border-bottom: 1px solid #b8b6b7;
+    padding: 5px 0 15px 0;
+}
+.inform-title{
+    margin-left: 10px;
+    padding-bottom: 0px;
+    position: relative;
+}
+.inform-title img{
+    display: block;
+    
+}
+.inform-title i{
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    margin-right: -6px;
+    cursor: pointer;
+}
+.more-ico{
+    display: block;
+    width: 40px;
+    height: 16px;
+    background-image: url(./imgs/more.png);
+    position: absolute;
+    right: 20px;
+    top: 11px;
+    margin-right: -6px;
+    cursor: pointer;
+}
+.middle{
+    float: left;
+    width: 540px;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+.clear{
+    clear: both;
 }
 .footerbox{
     width: 100%;
