@@ -424,6 +424,34 @@ table{
     width: 16px;
     line-height: 18px;
 }
+.calen-month-header{
+    display: flex;
+    justify-content: space-between;
+}
+.calen-month-header th{
+    display: table-cell;
+    vertical-align: inherit;
+    font-weight: bold;
+}
+
+.sign-login{
+    border-bottom: 1px solid #b8b6b7;
+    padding: 5px 0 15px 0;
+}
+.login-title{
+    margin-left: 10px;
+    padding-bottom: 0px;
+    position: relative;
+}
+#money-title{
+    margin-left: 10px;
+    padding-bottom: 0px;
+}
+.meeting-title{
+    margin-left: 10px;
+    padding-bottom: 0px;
+    position: relative;
+}
 
 .clear{
     clear: both;
