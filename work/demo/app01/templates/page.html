@@ -7,7 +7,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>中南大学信息门户-首页</title>
         <link rel="stylesheet" href="{% static 'css/pagestyle.css' %}">
-        <script></script>
+        <script src="{% static 'js/vue.js' %}"></script>
     </head>
     <body >
         <!-- 顶部 -->
@@ -36,16 +36,24 @@
                     <div class="user">
                         <div class="userpic"><img src="{% static 'imgs/defaultheadimg.png' %}" class="avatar"></div>
                         <p class="username">{{ name }}</p>
-                        <div class="address-select">
-                            <label><span id="user-status" >空闲</span></label>
+                        <div id="select_status" class="address-select">
+                            <label><span id="user-status" v-text="selected" ></span></label>
                             <i class="arrow-down"></i>
-                                <select id="status">
+                                <select v-model="selected" id="status">
                                     <option value="空闲">空闲</option>
                                     <option value="工作">工作</option>
                                     <option value="上课">上课</option>
                                     <option value="开会">开会</option>
                                 </select>
                         </div>
+                        <script>
+                            var status_select =new Vue({
+                                el:'#select_status',
+                                data:{
+                                    selected:'空闲'
+                                }
+                            })
+                        </script>
                         <p class="user-handle">
                             <a>个人信息</a>
                             <span>|</span>
@@ -69,7 +77,7 @@
                                 <p >本科生教务</p> 
                             </li>
                             <li class="item">
-                                <img src="https://app.its.csu.edu.cn/fe/systemimg/ssosystem/70.png"">
+                                <img src="https://app.its.csu.edu.cn/fe/systemimg/ssosystem/70.png">
                                 <p>中南云盘</p> 
                             </li>
                             <li class="item"title="虚拟仿真实验平台1">
